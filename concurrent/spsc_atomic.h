@@ -13,8 +13,8 @@
 * If not, see http://www.gnu.org/licenses/.
 */
 
-#ifndef _SPSC_ATOMIC_H_
-#define _SPSC_ATOMIC_H_
+#ifndef _LLUTIL_SPSC_ATOMIC_H_
+#define _LLUTIL_SPSC_ATOMIC_H_
 
 #include <atomic>
 #include <cassert>
@@ -124,6 +124,7 @@ class SPSCAtomic
     return true;
   };
 
+  /*
   T* front()
   {
   };
@@ -139,5 +140,6 @@ class SPSCAtomic
   bool is_empty()
   {
   };
+  */
 };
-#endif//_SPSC_ATOMIC_H_
+#endif//_LLUTIL_SPSC_ATOMIC_H_

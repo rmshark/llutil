@@ -13,8 +13,8 @@
 * If not, see http://www.gnu.org/licenses/.
 */
 
-#ifndef _MPSC_ATOMIC_H_
-#define _MPSC_ATOMIC_H_
+#ifndef _LLUTIL_MPSC_ATOMIC_H_
+#define _LLUTIL_MPSC_ATOMIC_H_
 
 #include <atomic>
 #include <cassert>
@@ -123,7 +123,7 @@ std::atomic<uint64_t> _write_index;
     _read_index.fetch_add((uint64_t)1, std::memory_order_seq_cst);
     return true;
   };
-  
+  /*
   T* front()
   {
   };
@@ -139,5 +139,6 @@ std::atomic<uint64_t> _write_index;
   bool is_empty()
   {
   };
+  */
 };
-#endif//_MPSC_ATOMIC_H_
+#endif//_LLUTIL_MPSC_ATOMIC_H_
