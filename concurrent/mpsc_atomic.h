@@ -72,8 +72,8 @@ std::atomic<uint64_t> _write_index;
 #else
   ~MPSCAtomic()
   {
-    delete _data;
-    delete _flag;
+    delete[] _data;
+    delete[] _flag;
   };
 #endif
 
