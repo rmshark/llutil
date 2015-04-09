@@ -66,7 +66,7 @@ class SPSCAtomic
   #else
   ~SPSCAtomic()
   {
-    delete _data;
+    delete[] _data;
   }
   #endif
   
