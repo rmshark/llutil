@@ -17,6 +17,8 @@
 #ifndef _LLUTIL_LOG_H_
 #define _LLUTIL_LOG_H_
 
+#define LOG(level,...) Logger::GetInstance().Log(LOG_LEVEL::level,__VA_ARGS__)
+
 #include <cstdint>
 #include <cstdio>
 #include <cstring>
